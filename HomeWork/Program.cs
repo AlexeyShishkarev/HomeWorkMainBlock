@@ -17,6 +17,7 @@ int lenght = GetLenghtArray("Введите количество элемент�
 string[] FillArray(int length)
 {
     string[] array = new string[length];
+    Console.WriteLine("Введите элементы массива: ");
     for (var i = 0; i < length; i++)
     {
         array[i] = Console.ReadLine();
@@ -28,6 +29,21 @@ void PrintArray(string[] array, string message)
 {
     Console.WriteLine(message);
     Console.WriteLine(string.Join(" ", array));
+}
+
+string[] FindElement(string[] array)
+{
+    int i = 0;
+    string[] newArray = new string[lenght];
+    foreach (string element in array)
+    {
+        if (element.Length <= 3)
+        {
+            newArray[i] = element;
+            i++;
+        }
+    }
+    return newArray;
 }
 
 
