@@ -24,3 +24,19 @@ string[] FillArray(int length)
     return array;
 }
 
+void PrintArray(string[] array, string message)
+{
+    Console.WriteLine(message);
+    Console.WriteLine(string.Join(" ", array));
+}
+
+
+string[] array = FillArray(lenght);
+
+string[] newArray = new string[lenght];
+
+PrintArray(array, "Наш массив: ");
+
+
+
+
