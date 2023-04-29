@@ -28,7 +28,7 @@ string[] FillArray(int length)
 void PrintArray(string[] array, string message)
 {
     Console.WriteLine(message);
-    Console.WriteLine(string.Join(" ", array));
+    Console.WriteLine("[{0}]", string.Join(" ", array));
 }
 
 string[] FindElement(string[] array)
