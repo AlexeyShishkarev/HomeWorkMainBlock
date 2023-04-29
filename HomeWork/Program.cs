@@ -49,10 +49,12 @@ string[] FindElement(string[] array)
 
 string[] array = FillArray(lenght);
 
-string[] newArray = new string[lenght];
+string[] newArray = FindElement(array);
 
 PrintArray(array, "Наш массив: ");
 
+Console.WriteLine();
 
+PrintArray(newArray, "Новый массив: ");
 
 
